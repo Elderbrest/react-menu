@@ -1,9 +1,14 @@
 import React from 'react';
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
+
+import LogoImage from '../../assets/img/logo.svg';
 
 import {
   Container,
   Content,
-  Header
+  Header,
+  Logo,
+  Close
 } from "./styled";
 
 const Menu = () => {
@@ -11,7 +16,8 @@ const Menu = () => {
     <Container>
       <Content>
         <Header>
-          Logo
+          <Logo src={LogoImage} alt="logo" />
+          <Close icon={faTimes} />
         </Header>
       </Content>
     </Container>
