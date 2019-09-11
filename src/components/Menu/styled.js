@@ -35,6 +35,28 @@ const Close = styled(FontAwesomeIcon)`
   position: absolute;
   right: 0;
   cursor: pointer;
+`;
+
+const ProfileSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+`;
+
+const Avatar = styled.img`
+  background-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+`;
+
+const Text = styled.p`
+  margin: 10px 0 0 0;
+  color: #fff;
+  font-size: 2rem;
 `
 
 export {
@@ -42,5 +64,8 @@ export {
   Content,
   Header,
   Logo,
-  Close
+  Close,
+  ProfileSection,
+  Avatar,
+  Text
 }
