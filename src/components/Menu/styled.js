@@ -5,14 +5,20 @@ const Container = styled.div`
   display: flex;
   box-sizing: border-box;
   position: fixed;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-color: #fc6365;
   padding: 24px;
+  overflow-y: auto;
 `;
 
 const Content = styled.div`
   width: 100%;
+  display: flex;
+  flex-direction: column;
 `;
 
 const Header = styled.header`
@@ -60,6 +66,7 @@ const Text = styled.p`
 `;
 
 const List = styled.div`
+  margin: 24px 0 48px 0;
 `
 
 const Item = styled.div`
@@ -69,11 +76,24 @@ const Item = styled.div`
   border-bottom: 2px solid #fff;
   color: #fff;
   font-size: 2rem;
+  
+  &:last-child {
+    border: none;
+  }
 `;
 
 const Icon = styled(FontAwesomeIcon)`
   margin-right: 20px;
-`
+`;
+
+const Footer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #fff;
+  padding: 24px 0;
+  margin-top: auto;
+`;
 
 export {
   Container,
@@ -86,5 +106,6 @@ export {
   Text,
   List,
   Item,
-  Icon
+  Icon,
+  Footer
 }

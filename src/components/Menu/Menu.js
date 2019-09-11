@@ -25,7 +25,8 @@ import {
   Text,
   List,
   Item,
-  Icon
+  Icon,
+  Footer
 } from "./styled";
 
 const Menu = () => {
@@ -76,6 +77,9 @@ const Menu = () => {
             FAQ
           </Item>
         </List>
+        <Footer>
+          <Text>We are here to help</Text>
+        </Footer>
       </Content>
     </Container>
   );
