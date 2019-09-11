@@ -86,15 +86,6 @@ const Icon = styled(FontAwesomeIcon)`
   margin-right: 20px;
 `;
 
-const Footer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top: 2px solid #fff;
-  padding: 24px 0;
-  margin-top: auto;
-`;
-
 export {
   Container,
   Content,
@@ -107,5 +98,4 @@ export {
   List,
   Item,
   Icon,
-  Footer
 }

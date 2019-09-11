@@ -1,5 +1,4 @@
 import React from 'react';
-import { Desktop, Mobile } from '../../utils/device';
 import {
   faTimes,
   faUserCircle,
@@ -11,6 +10,7 @@ import {
   faQuestionCircle,
   faInfoCircle
 } from '@fortawesome/free-solid-svg-icons'
+import Footer from './Footer';
 
 import LogoImage from '../../assets/img/logo.svg';
 import AvatarImage from '../../assets/img/avatar.png';
@@ -26,8 +26,7 @@ import {
   Text,
   List,
   Item,
-  Icon,
-  Footer
+  Icon
 } from "./styled";
 
 const Menu = () => {
@@ -78,14 +77,7 @@ const Menu = () => {
             FAQ
           </Item>
         </List>
-        <Footer>
-          <Desktop>
-            <Text>We are here to help</Text>
-          </Desktop>
-          <Mobile>
-            <Text>Mobile Footer</Text>
-          </Mobile>
-        </Footer>
+        <Footer />
       </Content>
     </Container>
   );
