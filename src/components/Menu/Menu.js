@@ -1,5 +1,15 @@
 import React from 'react';
-import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import {
+  faTimes,
+  faUserCircle,
+  faPlane,
+  faCreditCard,
+  faLifeRing,
+  faPhoneAlt,
+  faSignOutAlt,
+  faQuestionCircle,
+  faInfoCircle
+} from '@fortawesome/free-solid-svg-icons'
 
 import LogoImage from '../../assets/img/logo.svg';
 import AvatarImage from '../../assets/img/avatar.png';
@@ -12,7 +22,10 @@ import {
   Close,
   ProfileSection,
   Avatar,
-  Text
+  Text,
+  List,
+  Item,
+  Icon
 } from "./styled";
 
 const Menu = () => {
@@ -29,6 +42,40 @@ const Menu = () => {
           <Text>Available Balance</Text>
           <Text>£1500</Text>
         </ProfileSection>
+        <List>
+          <Item>
+            <Icon icon={faUserCircle} />
+            Profile
+          </Item>
+          <Item>
+            <Icon icon={faPlane} />
+            My Bookings
+          </Item>
+          <Item>
+            <Icon icon={faCreditCard} />
+            My Payments
+          </Item>
+          <Item>
+            <Icon icon={faLifeRing} />
+            Support
+          </Item>
+          <Item>
+            <Icon icon={faPhoneAlt} />
+            Contact Us
+          </Item>
+          <Item>
+            <Icon icon={faSignOutAlt} />
+            Log Out
+          </Item>
+          <Item>
+            <Icon icon={faQuestionCircle} />
+            About
+          </Item>
+          <Item>
+            <Icon icon={faInfoCircle} />
+            FAQ
+          </Item>
+        </List>
       </Content>
     </Container>
   );

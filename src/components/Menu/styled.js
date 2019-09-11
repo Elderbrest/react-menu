@@ -57,6 +57,22 @@ const Text = styled.p`
   margin: 10px 0 0 0;
   color: #fff;
   font-size: 2rem;
+`;
+
+const List = styled.div`
+`
+
+const Item = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 2rem;
+`;
+
+const Icon = styled(FontAwesomeIcon)`
+  margin-right: 20px;
 `
 
 export {
@@ -67,5 +83,8 @@ export {
   Close,
   ProfileSection,
   Avatar,
-  Text
+  Text,
+  List,
+  Item,
+  Icon
 }
