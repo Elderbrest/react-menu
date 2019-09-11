@@ -1,4 +1,5 @@
 import React from 'react';
+import { Desktop, Mobile } from '../../utils/device';
 import {
   faTimes,
   faUserCircle,
@@ -78,7 +79,12 @@ const Menu = () => {
           </Item>
         </List>
         <Footer>
-          <Text>We are here to help</Text>
+          <Desktop>
+            <Text>We are here to help</Text>
+          </Desktop>
+          <Mobile>
+            <Text>Mobile Footer</Text>
+          </Mobile>
         </Footer>
       </Content>
     </Container>
