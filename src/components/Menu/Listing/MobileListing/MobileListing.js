@@ -28,7 +28,7 @@ const MobileListing = () => {
         <Avatar src={AvatarImage} alt="avatar" />
         <Text>Dominik</Text>
         <Text>Available Balance</Text>
-        <Text>£1500</Text>
+        <Text>£1,500.00</Text>
       </ProfileSection>
       <MenuList>
         <Item>

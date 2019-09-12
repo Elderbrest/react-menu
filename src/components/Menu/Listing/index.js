@@ -1,10 +1,11 @@
 import React from 'react';
 import MobileListing from "./MobileListing";
+import DesktopListing from "./DesktopListing";
 
 const Listing = () => {
   return (
     <div>
-      <MobileListing />
+      <DesktopListing />
     </div>
   );
 };
