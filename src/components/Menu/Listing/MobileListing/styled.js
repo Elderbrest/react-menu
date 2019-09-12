@@ -27,6 +27,12 @@ const MenuList = styled.div`
   margin: 24px 0 48px 0;
 `;
 
+const Link = styled.a`
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+`
+
 const Item = styled.div`
   display: flex;
   align-items: center;
@@ -49,6 +55,7 @@ export {
   ProfileSection,
   Text,
   MenuList,
+  Link,
   Item,
   Icon
 }

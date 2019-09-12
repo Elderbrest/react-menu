@@ -17,6 +17,7 @@ import {
   ProfileSection,
   Text,
   MenuList,
+  Link,
   Item,
   Icon
 } from './styled'
@@ -32,36 +33,52 @@ const MobileListing = () => {
       </ProfileSection>
       <MenuList>
         <Item>
-          <Icon icon={faUserCircle} />
-          Profile
+          <Link href="#">
+            <Icon icon={faUserCircle} />
+            Profile
+          </Link>
         </Item>
         <Item>
-          <Icon icon={faPlane} />
-          My Bookings
+          <Link href="#">
+            <Icon icon={faPlane} />
+            My Bookings
+          </Link>
         </Item>
         <Item>
-          <Icon icon={faCreditCard} />
-          My Payments
+          <Link href="#">
+            <Icon icon={faCreditCard} />
+            My Payments
+          </Link>
         </Item>
         <Item>
-          <Icon icon={faLifeRing} />
-          Support
+          <Link href="#">
+            <Icon icon={faLifeRing} />
+            Support
+          </Link>
         </Item>
         <Item>
-          <Icon icon={faPhoneAlt} />
-          Contact Us
+          <Link href="#">
+            <Icon icon={faPhoneAlt} />
+            Contact Us
+          </Link>
         </Item>
         <Item>
-          <Icon icon={faSignOutAlt} />
-          Log Out
+          <Link href="#">
+            <Icon icon={faSignOutAlt} />
+            Log Out
+          </Link>
         </Item>
         <Item>
-          <Icon icon={faQuestionCircle} />
-          About
+          <Link href="#">
+            <Icon icon={faQuestionCircle} />
+            About
+          </Link>
         </Item>
         <Item>
-          <Icon icon={faInfoCircle} />
-          FAQ
+          <Link href="#">
+            <Icon icon={faInfoCircle} />
+            FAQ
+          </Link>
         </Item>
       </MenuList>
     </div>

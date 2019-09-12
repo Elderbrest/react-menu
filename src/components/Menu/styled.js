@@ -15,6 +15,7 @@ const Container = styled.div`
   overflow-y: auto;
   transition: 0.5s;
   transform: translateX(${({ state }) => (state === "entering" || state === "entered" ? 0 : '-100%')});
+  font-family: 'Lato', sans-serif;
 `;
 
 const Content = styled.div`

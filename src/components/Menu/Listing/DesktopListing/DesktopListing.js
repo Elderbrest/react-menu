@@ -22,13 +22,23 @@ const DesktopListing = () => {
           <Item>
             <Link href="#">Home</Link>
           </Item>
-          <Item>Flights</Item>
+          <Item>
+            <Link href="#">Flights</Link>
+            </Item>
         </List>
         <List>
-          <Item>About Us</Item>
-          <Item>FAQ</Item>
-          <Item>Support</Item>
-          <Item>Contact Us</Item>
+          <Item>
+            <Link href="#">About Us</Link>
+          </Item>
+          <Item>
+            <Link href="#">FAQ</Link>
+          </Item>
+          <Item>
+            <Link href="#">Support</Link>
+          </Item>
+          <Item>
+            <Link href="#">Contact Us</Link>
+          </Item>
         </List>
       </Column>
       <Column flex={1}>
@@ -42,11 +52,21 @@ const DesktopListing = () => {
           </div>
         </ProfileSection>
         <List>
-          <Item>Profile</Item>
-          <Item>My Bookings</Item>
-          <Item>My Payments</Item>
-          <Item>Log Out</Item>
-          <Item>Resume Application</Item>
+          <Item>
+            <Link href="#">Profile</Link>
+          </Item>
+          <Item>
+            <Link href="#">My Bookings</Link>
+          </Item>
+          <Item>
+            <Link href="#">My Payments</Link>
+          </Item>
+          <Item>
+            <Link href="#">Log Out</Link>
+          </Item>
+          <Item>
+            <Link href="#">Resume Application</Link>
+          </Item>
         </List>
       </Column>
       <Column flex={1}/>
