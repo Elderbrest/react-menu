@@ -4,6 +4,8 @@ The object of this test is to create an animated menu
 
 ## Getting Started
 
+[Demo](https://react-test-menu.herokuapp.com/)
+
 Clone this repository in your local machine.
 
 ### Prerequisites
