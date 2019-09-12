@@ -13,6 +13,8 @@ const Container = styled.div`
   background-color: #fc6365;
   padding: 24px;
   overflow-y: auto;
+  transition: 0.5s;
+  transform: translateX(${({ state }) => (state === "entering" || state === "entered" ? 0 : '-100%')});
 `;
 
 const Content = styled.div`

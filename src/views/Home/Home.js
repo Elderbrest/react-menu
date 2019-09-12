@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Menu from '../../components/Menu';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -8,12 +8,13 @@ import {
 } from "./styled";
 
 const Home = () => {
+  const [isActive, toggleMenu] = useState(false)
   return (
     <div>
       <Navigation>
-        <FontAwesomeIcon icon={faBars} />
+        <FontAwesomeIcon onClick={() => toggleMenu(true)} icon={faBars} />
       </Navigation>
-      {/*<Menu />*/}
+      <Menu isActive={isActive} toggleMenu={toggleMenu} />
     </div>
   );
 };
